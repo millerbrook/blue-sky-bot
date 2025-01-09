@@ -3,8 +3,8 @@ import getPostText from "./lib/getPostText.js";
 import { CronJob } from 'cron';
 
 const runOnce = async () => {
-	//const text = await Bot.run(getPostText);
-	const text = await Bot.run(getPostText, { dryRun: true} );
+	const text = await Bot.run(getPostText);
+//	const text = await Bot.run(getPostText, { dryRun: true} );
 
 	console.log(`[${new Date().toISOString()}] Posted: "${text}"`);
 }
