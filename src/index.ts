@@ -11,5 +11,5 @@ const runOnce = async () => {
 
 const scheduleExpressionMinute = '* * * * *';
 const scheduleExpression: string = '0 */24 * * *';
-const job = new CronJob(scheduleExpression, runOnce);
+const job = new CronJob(scheduleExpressionMinute, runOnce);
 job.start();
